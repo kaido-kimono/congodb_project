@@ -1,11 +1,11 @@
-public class Donnee <D> {
+public class Donnee<D> {
     D donnee;
 
-    public Donnee(D donnee){
+    public Donnee(D donnee) {
         this.donnee = donnee;
     }
 
-    public D getDonnee(){
+    public D getDonnee() {
         return donnee;
     }
 }
