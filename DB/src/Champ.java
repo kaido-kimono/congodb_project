@@ -1,4 +1,4 @@
-public class Champ<F> {
+public class Champ {
     Donnee  _donnee;
     String _nom_champ;
 
@@ -29,5 +29,19 @@ public class Champ<F> {
     public Champ(short donnee){
         this._donnee = new<Short> Donnee(donnee);
     }
+
+    public Donnee get_donnee() {
+        return _donnee;
+    }
+
+    public String get_nom_Champ() {
+        return _nom_champ;
+    }
+
+    public void set_nom_Champ(String _nom_Champ) {
+        this._nom_champ = _nom_Champ;
+    }
+
+
 
 }
