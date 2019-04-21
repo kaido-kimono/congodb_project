@@ -1,4 +1,5 @@
 public class Champ<F> {
+
     Donnee <F> _donnee;
     String _nom_champ;
 
@@ -37,5 +38,9 @@ public class Champ<F> {
 
     public String get_nom_champ() {
         return _nom_champ;
+    }
+
+    public void set_nom_champ(String _nom_champ) {
+        this._nom_champ = _nom_champ;
     }
 }
