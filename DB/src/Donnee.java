@@ -1,4 +1,5 @@
-public class Donnee<D> {
+public class Donnee <D> {
+
     D donnee;
 
     public Donnee(D donnee) {
