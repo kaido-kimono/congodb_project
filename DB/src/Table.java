@@ -7,4 +7,8 @@ public class Table {
     Champ _clesecondaire = null;
 
     public Table(){this._nom_table="Table";}
+
+    public  Table(String nom){
+        this._nom_table=nom;
+    }
 }
