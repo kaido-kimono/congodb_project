@@ -1,5 +1,6 @@
-public class Champ {
-    Donnee  _donnee;
+
+public class Champ <F> {
+    Donnee <F> _donnee;
     String _nom_champ;
 
     public Champ(int donnee){
