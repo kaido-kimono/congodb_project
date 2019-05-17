@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class Table {
+public class Table<T> {
     List<Champ> champs;
     String _nom_table;
     Champ _cleprimaire = null;
@@ -10,5 +10,9 @@ public class Table {
 
     public  Table(String nom){
         this._nom_table=nom;
+    }
+
+    public void AjoutChamp(String nom,T donne){
+
     }
 }
