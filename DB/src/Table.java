@@ -17,4 +17,6 @@ public class Table<T> {
         this.champs.add(champ);
     }
 
+
+
 }
