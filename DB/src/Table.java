@@ -13,6 +13,8 @@ public class Table<T> {
     }
 
     public void AjoutChamp(String nom,T donne){
-
+        Champ champ = new Champ(nom,donne);
+        this.champs.add(champ);
     }
+
 }
