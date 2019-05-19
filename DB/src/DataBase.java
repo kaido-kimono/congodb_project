@@ -6,6 +6,11 @@ public class DataBase {
     String _nom_utilisateur;
     String _mot_de_passe;
 
+    public DataBase(String nomDb, String nomUser){
+        this._nom_database = nomDb;
+        this._nom_utilisateur = nomUser;
+    }
+
 
 
 }
