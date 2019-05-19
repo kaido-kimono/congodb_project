@@ -49,4 +49,21 @@ public class Serialisation <T>{
 
         return  L;
     }
+    public T Deserialise(String nom_fichier) throws ClassNotFoundException{
+        T L = null ;
+
+        try {
+            FileInputStream file = new FileInputStream(nom_fichier);
+            ObjectInputStream get = new ObjectInputStream(file);
+            L = (T) get.readObject();
+            get.close();
+            file.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return  L;
+    }
 }
