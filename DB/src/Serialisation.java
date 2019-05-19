@@ -1,5 +1,6 @@
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.List;
 
@@ -9,7 +10,12 @@ public class Serialisation <T>{
 
         try{
             final FileOutputStream fichier = new FileOutputStream(nom_fichier);
+            save = new ObjectOutputStream(fichier);
+            save.writeObject(L);
+            save.flush();
         } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
