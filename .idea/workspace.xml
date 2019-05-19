@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8afd12e-68cc-499e-af80-69df2f143a51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DB/src/Serialisation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/src/Serialisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/DB/src/Serialisation.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,14 +50,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1037" />
-          <entry key="txt" value="646" />
+          <entry key="java" value="1127" />
+          <entry key="txt" value="711" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1037" />
-          <entry key="PLAIN_TEXT" value="646" />
+          <entry key="JAVA" value="1127" />
+          <entry key="PLAIN_TEXT" value="711" />
         </counts>
       </usages-collector>
     </session>
@@ -92,8 +92,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DB/src/Serialisation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="26" selection-start-column="26" selection-end-column="26" />
+            <state relative-caret-position="120">
+              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -144,6 +147,7 @@
         <option value="$PROJECT_DIR$/DB/src/Champ.java" />
         <option value="$PROJECT_DIR$/DB/src/DataBase.java" />
         <option value="$PROJECT_DIR$/DB/src/Table.java" />
+        <option value="$PROJECT_DIR$/DB/src/Serialisation.java" />
       </list>
     </option>
   </component>
@@ -187,7 +191,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558252716439" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558252863779" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -221,7 +225,7 @@
       <workItem from="1557138228539" duration="597000" />
       <workItem from="1558084042030" duration="8075000" />
       <workItem from="1558118635161" duration="995000" />
-      <workItem from="1558182877795" duration="2994000" />
+      <workItem from="1558182877795" duration="3270000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout d'un setter pour le nom du champ">
       <created>1555857032505</created>
@@ -335,17 +339,31 @@
       <option name="project" value="LOCAL" />
       <updated>1558250097416</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="creation de la classe Serialisation">
+      <created>1558252745894</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1558252745894</updated>
+    </task>
+    <task id="LOCAL-00018" summary="creation de la methode serialise">
+      <created>1558252896531</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1558252896531</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21736000" />
+    <option name="totallyTimeSpent" value="22012000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="781" height="830" extended-state="1" />
+    <frame x="-6" y="0" width="781" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14701803" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.14701803" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -398,7 +416,9 @@
     <MESSAGE value="creation du constructeur" />
     <MESSAGE value="ajout de la fonctionnalité CreerTable et SupprimerTable" />
     <MESSAGE value="ajout des getters et setters dans la classe Table" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout des getters et setters dans la classe Table" />
+    <MESSAGE value="creation de la classe Serialisation" />
+    <MESSAGE value="creation de la methode serialise" />
+    <option name="LAST_COMMIT_MESSAGE" value="creation de la methode serialise" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DB/src/Donnee.java">
@@ -447,8 +467,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DB/src/Serialisation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        <state relative-caret-position="120">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
