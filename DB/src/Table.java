@@ -12,11 +12,37 @@ public class Table<T> {
         this._nom_table=nom;
     }
 
-    public void AjoutChamp(String nom,T donne){
+    public List<Champ> getChamps() {
+        return champs;
+    }
+
+    public String get_nom_table() {
+        return _nom_table;
+    }
+
+    public void set_nom_table(String _nom_table) {
+        this._nom_table = _nom_table;
+    }
+
+    public Champ get_cleprimaire() {
+        return _cleprimaire;
+    }
+
+    public void set_cleprimaire(Champ _cleprimaire) {
+        this._cleprimaire = _cleprimaire;
+    }
+
+    public Champ get_clesecondaire() {
+        return _clesecondaire;
+    }
+
+    public void set_clesecondaire(Champ _clesecondaire) {
+        this._clesecondaire = _clesecondaire;
+    }
+
+    public void AjoutChamp(String nom, T donne){
         Champ champ = new Champ(nom,donne);
         this.champs.add(champ);
     }
-
-
 
 }
