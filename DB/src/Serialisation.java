@@ -32,7 +32,7 @@ public class Serialisation <T>{
         }
     }
 
-    public List<T> Deserialise(String nom_fichier) throws ClassNotFoundException{
+    public List<T> Deserialises(String nom_fichier) throws ClassNotFoundException{
         List<T> L = new ArrayList<>();
 
         try {
@@ -50,7 +50,7 @@ public class Serialisation <T>{
         return  L;
     }
     public T Deserialise(String nom_fichier) throws ClassNotFoundException{
-        T L = null ;
+        T L ;
 
         try {
             FileInputStream file = new FileInputStream(nom_fichier);
