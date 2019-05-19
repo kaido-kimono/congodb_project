@@ -1,7 +1,5 @@
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Serialisation <T>{
@@ -34,5 +32,21 @@ public class Serialisation <T>{
         }
     }
 
+    public List<T> Deserialise(String nom_fichier) throws ClassNotFoundException{
+        List<T> L = new ArrayList<>();
 
+        try {
+            FileInputStream file = new FileInputStream(nom_fichier);
+            ObjectInputStream get = new ObjectInputStream(file);
+            L = (ArrayList<T>) get.readObject();
+            get.close();
+            file.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return  L;
+    }
 }
