@@ -19,4 +19,20 @@ public class Serialisation <T>{
             e.printStackTrace();
         }
     }
+    public void serialise(T L, String nom_fichier)throws ClassNotFoundException{
+        ObjectOutputStream save = null;
+
+        try{
+            final FileOutputStream fichier = new FileOutputStream(nom_fichier);
+            save = new ObjectOutputStream(fichier);
+            save.writeObject(L);
+            save.flush();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
 }
