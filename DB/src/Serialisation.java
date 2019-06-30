@@ -50,7 +50,7 @@ public class Serialisation <T>{
         return  L;
     }
     public T Deserialise(String nom_fichier) throws ClassNotFoundException{
-        T L ;
+        T L=null;
 
         try {
             FileInputStream file = new FileInputStream(nom_fichier);
